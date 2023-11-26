@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- social media tags -->
+    <meta
+      property="og:title"
+      content="Balloon Popper| have fun popping the balloon"
+    />
+    <meta
+      property="og:description"
+      content="Pop The ballon By typing the letter inside it and have fun."
+    />
+    <meta
+      property="og:image"
+      content="https://ballon-popper.netlify.app/images/favicon-32x32"
+    />
+    <meta proeprty="og:url" content="https://balloon-popper.netlify.app" />
+    <meta property="og:site_name" content="Balloon Popper" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="Balloon" />
+    <!-- social media tags -->
+
+    <!-- meta for SEO tags -->
+    <meta name="title" content="Balloon Popper| have fun popping the balloon" />
+    <meta
+      name="description"
+      content="Pop The ballon By typing the letter inside it and have fun."
+    />
+    <meta name="keywords" content="Balloon Game Balloons Balloon Poppers" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="ibex" />
+
+    <!-- meta for SEO tags -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="icon" href="https://balloon-popper.netlify.app/favicon.ico" />
+    <link
+      rel="mask-icon"
+      href="./images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="apple-mobile-web-app-title" content="Balloon Popper" />
+    <meta name="application-name" content="Balloon Popper" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Balloon Poppers | have fun popping the balloon</title>
+  </head>
+  <body>
+    <div class="background">
+      <div class="sun"></div>
+      <div class="moon"></div>
+
+      <div class="clouds-wrapper __first-cloud">
+        <div class="clouds"></div>
+        <div class="clouds"></div>
+        <div class="clouds"></div>
+        <div class="clouds"></div>
+      </div>
+
+      <div class="clouds-wrapper __second-cloud">
+        <div class="clouds"></div>
+        <div class="clouds"></div>
+        <div class="clouds"></div>
+        <div class="clouds"></div>
+      </div>
+    </div>
+
+    <div class="balloon-container __center">
+      <div class="difficulty-container">
+        <select
+          id="difficulty-options"
+          class="difficulty-options __select __text"
+          name="difficulty"
+          title="difficulty options"
+        >
+          <option value="1000" class="difficulty" name="easy difficulty">
+            easy
+          </option>
+          <option value="500" class="difficulty" name="medium difficulty">
+            medium
+          </option>
+          <option value="400" class="difficulty" name="hard difficulty">
+            hard
+          </option>
+        </select>
+      </div>
+
+      <div class="score-container">
+        <p class="__text current-score">0</p>
+      </div>
+
+      <div class="life-container __center">
+        <span class="heart-icon"></span>
+        <p class="life __text">3</p>
+      </div>
+    </div>
+
+    <div class="game-over-board __center">
+      <p class="_board-text __text">game over</p>
+      <div class="score-container __center">
+        <p class="_board-text __text">score:</p>
+        <div class="score-balloon __center"><p class="__text score">0</p></div>
+      </div>
+      <button
+        type="button"
+        name="restart"
+        id="restart"
+        class="restart-button"
+        title="restart game"
+      >
+        play again !
+      </button>
+    </div>
+
+    <div class="mode-container">
+      <input
+        type="radio"
+        name="mode"
+        id="dark"
+        class="dark"
+        title="dark mode"
+      />
+      <input
+        type="radio"
+        name="mode"
+        id="light"
+        class="light"
+        title="light mode"
+      />
+    </div>
+    <div class="start-game-container">
+        <p class="instruction">Pop the balloon by typing the letter inside it Before it reaches the top.</p>
+        <button type="button" name="start" id="start" class="start"  title="start game" onclick="gameStart()">start game !</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
