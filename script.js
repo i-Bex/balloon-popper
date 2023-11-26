@@ -26,6 +26,7 @@ function balloon(time) {
   balloonElement.style.left = position() + "%";
   balloonElement.style.animationName = "float";
   balloonElement.append(balloonText);
+  balloonElement.addEventListener('click',balloonClick);
   balloonContainer.append(balloonElement);
   balloonPosition(time);
 }
@@ -88,6 +89,10 @@ function restart(){
   score.textContent = "0";
   gameOverBoard.style.display  = "none";
   generateBalloon();
+}
+
+function balloonClick(){
+     popBalloon(this);
 }
 
 function popBalloon(balloon){
